@@ -1,5 +1,27 @@
 # react-email
 
+## 3.0.7
+
+### Patch Changes
+
+- c61760e: use the `punycode` package for the static modules
+- 382c305: Fixes active state for root email templats on file tree
+- 519f0c6: Respect user's NODE_ENV when previewing templates
+- e149816: Upgrade socket.io to 4.8.1
+
+## 3.0.7-canary.1
+
+### Patch Changes
+
+- 57db6f7: Upgrade socket.io to 4.8.1
+
+## 3.0.7-canary.0
+
+### Patch Changes
+
+- 98b434c: Fixes active state for root email templats on file tree
+- 1c5c986: Respect user's NODE_ENV when previewing templates
+
 ## 3.0.6
 
 ### Patch Changes

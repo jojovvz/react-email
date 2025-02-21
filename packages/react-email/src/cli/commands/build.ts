@@ -1,14 +1,14 @@
+import { spawn } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
+import logSymbols from 'log-symbols';
 import ora from 'ora';
-import { spawn } from 'node:child_process';
 import {
   type EmailsDirectory,
   getEmailsDirectoryMetadata,
 } from '../../utils/get-emails-directory-metadata';
-import { cliPacakgeLocation } from '../utils';
 import { registerSpinnerAutostopping } from '../../utils/register-spinner-autostopping';
-import logSymbols from 'log-symbols';
+import { cliPackageLocation } from '../utils';
 
 interface Args {
   dir: string;
@@ -242,7 +242,7 @@ export const build = async ({
     }
 
     spinner.text = 'Copying preview app from CLI to `.react-email`';
-    await fs.promises.cp(cliPacakgeLocation, builtPreviewAppPath, {
+    await fs.promises.cp(cliPackageLocation, builtPreviewAppPath, {
       recursive: true,
       filter: (source: string) => {
         // do not copy the CLI files
