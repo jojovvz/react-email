@@ -26,6 +26,55 @@ export const RaycastMagicLinkEmail = ({
 }: RaycastMagicLinkEmailProps) => (
   <Html>
     <Head />
+    <title>magic lin - Marca Milionária</title>
+    <style>
+      body {{
+        background-color: #1a1a1a;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+      }}
+      .container {{
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }}
+      .header {{
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 2px solid #ffd700;
+      }}
+      .content {{
+        padding: 30px 0;
+      }}
+      .button {{
+        background-color: #ffd700;
+        color: #1a1a1a;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        display: inline-block;
+        margin: 20px 0;
+      }}
+      .footer {{
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid #333;
+        color: #888;
+      }}
+      .gold-text {{
+        color: #ffd700;
+      }}
+      .verification-code {{
+        background: #333;
+        padding: 20px;
+        text-align: center;
+        margin: 20px 0;
+        font-size: 24px;
+        letter-spacing: 5px;
+        color: #ffd700;
+      }}
+    </style>
     <Body style={main}>
       <Preview>Log in with this magic link.</Preview>
       <Container style={container}>
